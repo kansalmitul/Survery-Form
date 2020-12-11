@@ -12,7 +12,7 @@
     <div id="description">
       <p><b>This is the space for description.</b></p>
     </div>
-  <form>
+  <form action="file.php" method="POST">
       <div class="row-tab">
         <!--Name-->
         <div class="label-tab">
@@ -29,7 +29,7 @@
           <label>Email</label>
         </div>
         <div class="input-tab">
-          <input type="email" name="Email" placeholder="Enter your email" required>
+          <input type="email" name="email" placeholder="Enter your email" required>
         </div>
       </div>
 
@@ -49,9 +49,10 @@
           <label>Which option best describes your current role?</label>
         </div>
         <div class="input-tab">
-          <select id="dropdown" required>
-            <option value="Student">Student</option>
-            <option value="Enginner">Engineer</option>
+          <select id="dropdown" name="role" required>
+            <option selected hidden value="">Select One</option>
+            <option value="S">Student</option>
+            <option value="E">Engineer</option>
           </select> </p>
         </div>
       </div>
@@ -62,9 +63,9 @@
           <label>How likely is that you would recommend freeCodeCamp to a friend</label>
         </div>
         <div class="input-tab">
-          <input type="radio" name="name"/>Definitely<br>    
-          <input type="radio" name="name"/>Maybe<br> 
-          <input type="radio" name="name"/>Not Sure about it<br>
+          <input type="radio" name="rating" value="Definitely"/>Definitely<br>    
+          <input type="radio" name="rating" value="Maybe"/>Maybe<br> 
+          <input type="radio" name="rating" value="Not Sure about it"/>Not Sure about it<br>
         </div>
       </div>
 
@@ -74,7 +75,8 @@
           <label>What do you like most in FCC?</label>
         </div>
         <div class="input-tab">
-          <select id="most-like" required>
+          <select id="most-like" name="mostLike" required>
+            <option selected hidden value="">Select One</option>
             <option value="code samples">Code Samples</option>
             <option value="Sample projects">Sample Projects</option>
             <option value="other features">Other Features</option>
@@ -88,9 +90,9 @@
           <label>Things that should be improved in future (Check all that apply)</label>
       </div>
         <div class="input-tab">
-          <input type="checkbox"/>Front-end Projects <br>
-          <input type="checkbox"/>Back-end Projects <br>
-          <input type="checkbox"/>Data Visualization
+          <input type="checkbox" name="improve" value="FEP"/>Front-end Projects <br>
+          <input type="checkbox" name="improve" value="BEP"/>Back-end Projects <br>
+          <input type="checkbox" name="improve" value="DV"/>Data Visualization
         </div>
       </div>
 
@@ -100,14 +102,14 @@
           <label>Additional comments</label>
         </div>
         <div class="input-tab">
-          <textarea id="comments" placeholder="Enter your comment here..."></textarea></p>
+          <textarea id="comments" placeholder="Enter your comment here..." name="comments"></textarea></p>
         </div>
       </div>
 
       <div class="row-tab">
         <!--Submit-->
           <div class="label-tab">
-              <label>Submit</label>
+              <label></label>
             </div>
             <div class="input-tab">
               <button type="submit" id="submit" class="submit-button">
@@ -119,10 +121,3 @@
 </div>
 </section>
 </div>
-<!-- <body >
-  <form id="survey-form" class="check1">
-
-
-  </form>
-</body>
-</html> -->
