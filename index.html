@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="main">
+<header class="header">
+    <title>SURVEY FORM</title>
+    <h1 id="title">SURVEY FORM</h1>
+   <link rel="stylesheet" href="index.css">
+</header>
+
+<section class="index">
+  <div>
+    <div id="description">
+      <p><b>This is the space for description.</b></p>
+    </div>
+  <form>
+      <div class="row-tab">
+        <!--Name-->
+        <div class="label-tab">
+          <label>Name</label>
+        </div>
+        <div class="input-tab">
+          <input type="text" name="Name" placeholder="Enter your name" required>
+        </div>
+      </div>
+
+      <div class="row-tab">
+        <!--Email-->
+        <div class="label-tab">
+          <label>Email</label>
+        </div>
+        <div class="input-tab">
+          <input type="email" name="Email" placeholder="Enter your email" required>
+        </div>
+      </div>
+
+      <div class="row-tab">
+        <!--Age-->
+        <div class="label-tab">
+          <label>Age</label>
+        </div>
+        <div class="input-tab">
+          <input type="number" name="Age" min="18" max="80" placeholder="Age">
+        </div>
+      </div>
+
+      <div class="row-tab">
+        <!--Role-->
+        <div class="label-tab">
+          <label>Which option best describes your current role?</label>
+        </div>
+        <div class="input-tab">
+          <select id="dropdown" required>
+            <option value="Student">Student</option>
+            <option value="Enginner">Engineer</option>
+          </select> </p>
+        </div>
+      </div>
+ 
+      <div class="row-tab">
+        <!--How likely is that you would recommend freeCodeCamp to a friend-->
+        <div class="label-tab">
+          <label>How likely is that you would recommend freeCodeCamp to a friend</label>
+        </div>
+        <div class="input-tab">
+          <input type="radio" name="name"/>Definitely<br>    
+          <input type="radio" name="name"/>Maybe<br> 
+          <input type="radio" name="name"/>Not Sure about it<br>
+        </div>
+      </div>
+
+      <div class="row-tab">
+        <!--What do you like most in FCC?-->
+      <div class="label-tab">
+          <label>What do you like most in FCC?</label>
+        </div>
+        <div class="input-tab">
+          <select id="most-like" required>
+            <option value="code samples">Code Samples</option>
+            <option value="Sample projects">Sample Projects</option>
+            <option value="other features">Other Features</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row-tab">
+    <!--Things that should be improved in future-->
+      <div class="label-tab">
+          <label>Things that should be improved in future (Check all that apply)</label>
+      </div>
+        <div class="input-tab">
+          <input type="checkbox"/>Front-end Projects <br>
+          <input type="checkbox"/>Back-end Projects <br>
+          <input type="checkbox"/>Data Visualization
+        </div>
+      </div>
+
+      <div class="row-tab">
+    <!--Additional comments-->
+      <div class="label-tab">
+          <label>Additional comments</label>
+        </div>
+        <div class="input-tab">
+          <textarea id="comments" placeholder="Enter your comment here..."></textarea></p>
+        </div>
+      </div>
+
+      <div class="row-tab">
+        <!--Submit-->
+          <div class="label-tab">
+              <label>Submit</label>
+            </div>
+            <div class="input-tab">
+              <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button></p>            </div>
+          </div>
+
+  </form>
+</div>
+</section>
+</div>
+<!-- <body >
+  <form id="survey-form" class="check1">
+
+
+  </form>
+</body>
+</html> -->

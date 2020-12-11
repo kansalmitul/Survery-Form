@@ -1,0 +1,54 @@
+.submit-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.main{
+  background-image: url("image.jpg");
+  height: 770px;
+  background-position: top;
+  background-repeat: repeat; 
+  background-size: inherit; 
+}
+.header{
+  background-color:red;
+  border: 2px solid black;
+  margin: 0 auto;
+  text-align: center;
+  width: 95%;
+}
+.index{
+  text-align: center;
+  border: 2px solid black;
+  margin: 0 auto;
+  background-color: yellow;
+  width: 95%;
+  color: black;
+  text-align: center;
+  opacity: 0.91;
+}
+
+.row-tab{
+  display:block;
+  padding-bottom:20px;
+}
+  
+.label-tab{
+  display:inline-block;
+  width:44%;
+  text-align:right;
+  vertical-align:top;
+}
+  
+.input-tab{
+  display:inline-block;
+  width:54%;
+  text-align:left;
+}
